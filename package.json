@@ -1,0 +1,26 @@
+{
+  "name": "webpack-npm",
+  "version": "1.0.0",
+  "description": "webpack 是一个前端常用的模块化打包工具，它的作用就是将 JavaScript 代码或者其他静态文件进行分析、压缩，最终合并打包成浏览器可以识别的代码。关于模块化，拿 ES6 module 来说，可以通过 export 导出，import 导入的代码块或者静态资源都可以成为模块。从入口文件开始，webpack 会通过递归的方式将应用程序所依赖的模块进行打包成一个或者多个 bundle。",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
